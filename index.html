@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حاسبة</title>
+    <link rel="stylesheet" href="pro.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculatordis">
+            <input type="text" class="calculatorinp" id="show" disabled>
+        </div>
+        <div class="calculatorbut">
+           
+            <button class="b1" onclick="appendToDisplay('1')">1</button>
+            <button class="b1" onclick="appendToDisplay('2')">2</button>
+            <button class="b1" onclick="appendToDisplay('3')">3</button>
+            <button class="b1" onclick="appendToDisplay('4')">4</button>
+            <button class="b1" onclick="appendToDisplay('5')">5</button>
+            <button class="b1" onclick="appendToDisplay('6')">6</button>
+            
+            <button class="b1" onclick="appendToDisplay('7')">7</button>
+            <button class="b1" onclick="appendToDisplay('8')">8</button>
+            <button class="b1" onclick="appendToDisplay('9')">9</button>
+            
+           
+           
+            <button class="b1 zero" onclick="appendToDisplay('0')">0</button>
+             <button class="b2" onclick="deleteLast()">Delete</button>
+            <button class="b2" onclick="clearDisplay()">c</button>
+            
+            <button class="b2" onclick="appendToDisplay('%')">%</button>
+            <button class="b1 oper" onclick="appendToDisplay('/')">/</button>
+            <button class="b1 oper" onclick="appendToDisplay('*')">*</button>
+            <button class="b1 oper" onclick="appendToDisplay('-')">-</button>
+            <button class="b1 oper" onclick="appendToDisplay('+')">+</button>
+            <button class="b2" onclick="appendToDisplay('.')">.</button>
+            <button class="b1 equal" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <script src="pro.js"></script>
+</body>
+</html>
